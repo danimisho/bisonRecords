@@ -68,6 +68,7 @@ a {
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  width: 45%
  }
 
 .site-navigator-button{
@@ -79,6 +80,22 @@ a {
   width: 80%;
   margin: auto;
   padding-bottom: 20px;
+}
+
+.site-homepage-container{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.site-stamp-canvas{
+  width: 45%;
+  background-color: red;
+}
+
+.img-container.site-logo.stamp{
+  width: 10%;
+  position: absolute;
 }
 
 .buy-link{

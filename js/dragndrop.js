@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    $( ".draggable" ).draggable();
+    $( ".draggable" ).draggable({stack:".stokey-print-test"});
 });
