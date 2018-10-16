@@ -1,0 +1,91 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+*/
+
+/******************************************
+/* COLOURS
+/*******************************************/
+
+/* add a list of colours used in the project */
+
+/******************************************
+/* SENSIBLE DEFAULTS
+/*******************************************/
+
+* {
+     box-sizing: border-box;
+}
+img {
+	max-width:100%;
+}
+
+/******************************************
+/* TYPOGRAPHY
+/*******************************************/
+
+/* add type styles here */
+@font-face {
+    font-family: "UniversExtendedBold";
+    src:  url("../fonts/univers_extended_bold.ttf") /* TTF file for CSS3 browsers */
+          format('truetype');
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  background-color: #000;
+  color: #fff;
+  font-family: "UniversExtendedBold", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.site-header {
+  font-size: 5em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%)
+}
+
+.invert{
+  background-color: #fff;
+  color: #000;
+}
+
+.img-container.site-logo{
+  width: 12em;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%)
+}
+/******************************************
+/* HELPER CLASSES
+/*******************************************/
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
