@@ -26,6 +26,13 @@ img {
 /*******************************************/
 
 /* add type styles here */
+
+@font-face {
+    font-family: "UniversExtended";
+    src:  url("../fonts/Univers_Extended.ttf") /* TTF file for CSS3 browsers */
+          format('truetype');
+}
+
 @font-face {
     font-family: "UniversExtendedBold";
     src:  url("../fonts/univers_extended_bold.ttf") /* TTF file for CSS3 browsers */
@@ -47,7 +54,7 @@ a {
 }
 
 .site-hero {
-  font-size: 5em;
+  font-size: 72px;
   padding-top: .4em;
   padding-bottom: .4em;
 }
@@ -57,7 +64,7 @@ a {
 }
 
 .site-navigator{
-  font-size: 4em;
+  font-size: 48px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -65,18 +72,22 @@ a {
 
 .site-navigator-button{
   display: inline-block;
+  padding-bottom: .2em;
 }
 
 .site-content{
-  width: 60%;
+  width: 80%;
   margin: auto;
-  text-align: center;
+  padding-bottom: 20px;
 }
 
 .site-navigator-button:hover{
   animation: shake 0.5s infinite;
 }
 
+.img-container.album-artwork{
+  width: 50%;
+}
 
 @keyframes shake {
     0% { transform: translate(2px, 2px) rotate(0deg); }
@@ -90,6 +101,22 @@ a {
     80% { transform: translate(-2px, -2px) rotate(4deg); }
     90% { transform: translate(2px, 4px) rotate(0deg); }
     100% { transform: translate(2px, -4px) rotate(-2.3deg); }
+}
+
+.site-page-title{
+  font-size: 48px;
+  padding-bottom: .2em;
+}
+
+.site-page-subtitle{
+  font-size: 36px;
+  padding-bottom: .2em;
+}
+
+.site-page-text{
+  font-size: 24px;
+  padding-bottom: .5em;
+  font-family: "UniversExtended", sans-serif;
 }
 
 /******************************************
