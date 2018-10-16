@@ -82,7 +82,7 @@ a {
 }
 
 .buy-link{
-  animation: rainbowtext 1.5s infinite ease-in-out;
+  animation: rainbowtext 2s infinite ease-in-out;
   text-decoration: underline;
   text-align: right;
 }
@@ -94,6 +94,7 @@ a {
   50% {color: #00ffff;}
   66.7% {color: #0000ff;}
   83.3%{ color: #ff00ff;}
+  100%{color: #ff0000;}
 }
 
 .site-content.dragndrop{
