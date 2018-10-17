@@ -46,6 +46,7 @@ body{
   background-color: #fff;
   color: #000;
   font-family: "UniversExtendedBold", sans-serif;
+  padding-right: 20px;
 }
 
 a {
@@ -77,8 +78,6 @@ a {
 }
 
 .site-content{
-  width: 80%;
-  margin: auto;
   padding-bottom: 20px;
 }
 
@@ -99,19 +98,19 @@ a {
 }
 
 .buy-link{
-  animation: rainbowtext 2s infinite ease-in-out;
+  animation: rainbowtext 10s infinite ease-in-out;
   text-decoration: underline;
   text-align: right;
 }
 
 @keyframes rainbowtext {
-  0% {color: #ff0000;}
+  0% {color: #ff8888;}
   16.7% {color: #ffff00;}
-  33.3% {color: #00ff00;}
+  33.3% {color: #88ff88;}
   50% {color: #00ffff;}
-  66.7% {color: #0000ff;}
+  66.7% {color: #8888ff;}
   83.3%{ color: #ff00ff;}
-  100%{color: #ff0000;}
+  100%{color: #ff8888;}
 }
 
 .site-content.dragndrop{
@@ -125,6 +124,11 @@ a {
 
 .img-container.album-artwork{
   width: 50%;
+  float: left;
+}
+
+.site-page-text.shp-lp-album-text{
+  font-size: 20px;
 }
 
 .draggable:hover{
@@ -248,6 +252,7 @@ a {
   font-family: "UniversExtended", sans-serif;
 }
 
+
 /******************************************
 /* HELPER CLASSES
 /*******************************************/
@@ -273,3 +278,72 @@ a {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media all and (min-width: 1400px) {
+  body {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  body {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  body {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  body {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+
+@media all and (max-width: 800px) {
+  body {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .site-page-subtitle{
+    font-size: 30px;
+    padding-bottom: .2em;
+  }
+
+  .site-page-text{
+    font-size: 21px;
+  }
+
+  .site-page-text.shp-lp-album-text{
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  body {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .site-page-subtitle{
+    font-size: 24px;
+    padding-bottom: .2em;
+  }
+
+  .site-page-text{
+    font-size: 18px;
+  }
+
+  .site-page-text.shp-lp-album-text{
+    font-size: 16px;
+  }
+}
