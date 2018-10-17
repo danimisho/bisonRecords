@@ -81,6 +81,12 @@ a {
   padding-bottom: 20px;
 }
 
+.buy-link{
+  color: blue;
+  text-decoration: underline;
+  text-align: right;
+}
+
 .site-content.dragndrop{
   position: relative;
   height: 670px;
