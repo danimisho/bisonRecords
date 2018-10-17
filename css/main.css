@@ -87,9 +87,8 @@ a {
  justify-content: space-between;
 }
 
-.site-stamp-canvas{
-  width: 45%;
-  background-color: red;
+.site-signup-form{
+  line-height: 1.2;
 }
 
 .img-container.site-logo.stamp{
@@ -113,7 +112,18 @@ a {
   100%{color: #ff8888;}
 }
 
-.site-content.dragndrop{
+.artist-entry{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.artist-entry-text{
+  width: 50%;
+}
+
+.dragndrop{
+  width: 50%;
   position: relative;
   height: 670px;
 }
@@ -238,18 +248,19 @@ a {
 
 .site-page-title{
   font-size: 48px;
-  padding-bottom: .2em;
+  padding-bottom: .3em;
 }
 
 .site-page-subtitle{
   font-size: 36px;
-  padding-bottom: .2em;
+  padding-bottom: .3em;
 }
 
 .site-page-text{
   font-size: 24px;
   padding-bottom: .5em;
   font-family: "UniversExtended", sans-serif;
+  line-height: 1.2;
 }
 
 
@@ -298,12 +309,37 @@ a {
     width: 1000px;
     margin: 0 auto;
   }
+
+  .artist-entry{
+    flex-direction: column;
+  }
+
+  .artist-entry-text{
+    width: 100%;
+  }
+
+  .dragndrop{
+    width: 100%;
+  }
+
 }
 
 @media all and (max-width: 1000px) {
   body {
     width: 800px;
     margin: 0 auto;
+  }
+
+  .artist-entry{
+    flex-direction: column;
+  }
+
+  .artist-entry-text{
+    width: 100%;
+  }
+
+  .dragndrop{
+    width: 100%;
   }
 }
 
@@ -312,6 +348,18 @@ a {
   body {
     width: 600px;
     margin: 0 auto;
+  }
+
+  .artist-entry{
+    flex-direction: column;
+  }
+
+  .artist-entry-text{
+    width: 100%;
+  }
+
+  .dragndrop{
+    width: 100%;
   }
 
   .site-page-subtitle{
@@ -332,6 +380,18 @@ a {
   body {
     width: 400px;
     margin: 0 auto;
+  }
+
+  .artist-entry{
+    flex-direction: column;
+  }
+
+  .artist-entry-text{
+    width: 100%;
+  }
+
+  .dragndrop{
+    width: 100%;
   }
 
 
@@ -362,6 +422,18 @@ a {
     margin: 0 auto;
   }
 
+  .artist-entry{
+    flex-direction: column;
+  }
+
+  .artist-entry-text{
+    width: 100%;
+  }
+
+  .dragndrop{
+    width: 100%;
+  }
+
 
   .site-page-subtitle{
     font-size: 24px;
@@ -388,6 +460,18 @@ a {
   body {
     width: 320px;
     margin: 0 auto;
+  }
+
+  .artist-entry{
+    flex-direction: column;
+  }
+
+  .artist-entry-text{
+    width: 100%;
+  }
+
+  .dragndrop{
+    width: 100%;
   }
 
 
