@@ -46,6 +46,7 @@ body{
   background-color: #fff;
   color: #000;
   font-family: "UniversExtendedBold", sans-serif;
+  padding-right: 20px;
 }
 
 a {
@@ -68,6 +69,7 @@ a {
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  width: 45%
  }
 
 .site-navigator-button{
@@ -76,9 +78,54 @@ a {
 }
 
 .site-content{
-  width: 80%;
-  margin: auto;
   padding-bottom: 20px;
+}
+
+.site-homepage-container{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.site-signup-form{
+  line-height: 1.2;
+}
+
+.img-container.site-logo.stamp{
+  width: 10%;
+  position: absolute;
+}
+
+.buy-link{
+  animation: rainbowtext 10s infinite ease-in-out;
+  text-decoration: underline;
+  text-align: right;
+}
+
+@keyframes rainbowtext {
+  0% {color: #ff8888;}
+  16.7% {color: #ffff00;}
+  33.3% {color: #88ff88;}
+  50% {color: #00ffff;}
+  66.7% {color: #8888ff;}
+  83.3%{ color: #ff00ff;}
+  100%{color: #ff8888;}
+}
+
+.artist-entry{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.artist-entry-text{
+  width: 50%;
+}
+
+.dragndrop{
+  width: 50%;
+  position: relative;
+  height: 670px;
 }
 
 .site-navigator-button:hover{
@@ -87,6 +134,102 @@ a {
 
 .img-container.album-artwork{
   width: 50%;
+  float: left;
+}
+
+.site-page-text.shp-lp-album-text{
+  font-size: 20px;
+}
+
+.draggable:hover{
+  cursor: move;
+}
+
+.img-container.stokey-print-test{
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.img-container.stokey-print-test.one{
+  margin-left: -214px;
+  margin-top: -253px;
+}
+
+.img-container.stokey-print-test.two{
+  margin-left: -174px;
+  margin-top: -273px;
+}
+
+.img-container.stokey-print-test.three{
+  margin-left: -242px;
+  margin-top: -244px;
+}
+
+.img-container.stokey-print-test.four{
+  margin-left: -223px;
+  margin-top: -341px;
+}
+
+.img-container.stokey-print-test.five{
+  margin-left: -273px;
+  margin-top: -308px;
+}
+
+.img-container.stokey-print-test.six{
+  margin-left: -132px;
+  margin-top: -367px;
+}
+
+.img-container.stokey-print-test.seven{
+  margin-left: -227px;
+  margin-top: -273px;
+}
+
+.img-container.stokey-print-test.eight{
+  margin-left: -135px;
+  margin-top: -326px;
+}
+
+.img-container.stokey-print-test.nine{
+  margin-left: -195px;
+  margin-top: -332px;
+}
+
+.img-container.stokey-print-test.ten{
+  margin-left: -103px;
+  margin-top: -328px;
+}
+
+.img-container.stokey-print-test.eleven{
+  margin-left: -298px;
+  margin-top: -308px;
+}
+
+.img-container.stokey-print-test.twelve{
+  margin-left: -153px;
+  margin-top: -326px;
+}
+
+.img-container.stokey-print-test.thirteen{
+  margin-left: -277px;
+  margin-top: -305px;
+}
+
+.img-container.stokey-print-test.fourteen{
+  margin-left: -250px;
+  margin-top: -315px;
+}
+
+.img-container.stokey-print-test.fifteen{
+  margin-left: -113px;
+  margin-top: -334px;
+}
+
+.img-container.stokey-print-test.sixteen{
+  margin-left: -278px;
+  margin-top: -336px;
 }
 
 @keyframes shake {
@@ -105,19 +248,21 @@ a {
 
 .site-page-title{
   font-size: 48px;
-  padding-bottom: .2em;
+  padding-bottom: .3em;
 }
 
 .site-page-subtitle{
   font-size: 36px;
-  padding-bottom: .2em;
+  padding-bottom: .3em;
 }
 
 .site-page-text{
   font-size: 24px;
   padding-bottom: .5em;
   font-family: "UniversExtended", sans-serif;
+  line-height: 1.2;
 }
+
 
 /******************************************
 /* HELPER CLASSES
@@ -144,3 +289,209 @@ a {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media all and (min-width: 1400px) {
+  body {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  body {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  body {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .artist-entry{
+    flex-direction: column;
+  }
+
+  .artist-entry-text{
+    width: 100%;
+  }
+
+  .dragndrop{
+    width: 100%;
+  }
+
+}
+
+@media all and (max-width: 1000px) {
+  body {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .artist-entry{
+    flex-direction: column;
+  }
+
+  .artist-entry-text{
+    width: 100%;
+  }
+
+  .dragndrop{
+    width: 100%;
+  }
+}
+
+
+@media all and (max-width: 800px) {
+  body {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .artist-entry{
+    flex-direction: column;
+  }
+
+  .artist-entry-text{
+    width: 100%;
+  }
+
+  .dragndrop{
+    width: 100%;
+  }
+
+  .site-page-subtitle{
+    font-size: 30px;
+    padding-bottom: .2em;
+  }
+
+  .site-page-text{
+    font-size: 21px;
+  }
+
+  .site-page-text.shp-lp-album-text{
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  body {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .artist-entry{
+    flex-direction: column;
+  }
+
+  .artist-entry-text{
+    width: 100%;
+  }
+
+  .dragndrop{
+    width: 100%;
+  }
+
+
+  .site-page-subtitle{
+    font-size: 24px;
+    padding-bottom: .2em;
+  }
+
+  .site-page-text{
+    font-size: 18px;
+  }
+
+  .site-page-text.shp-lp-album-text{
+    font-size: 16px;
+  }
+
+  .img-container.stokey-print-test{
+    width: 360px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  body {
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  .artist-entry{
+    flex-direction: column;
+  }
+
+  .artist-entry-text{
+    width: 100%;
+  }
+
+  .dragndrop{
+    width: 100%;
+  }
+
+
+  .site-page-subtitle{
+    font-size: 24px;
+    padding-bottom: .2em;
+  }
+
+  .site-page-text{
+    font-size: 18px;
+  }
+
+  .site-page-text.shp-lp-album-text{
+    font-size: 16px;
+  }
+
+  .img-container.stokey-print-test{
+    width: 320px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+}
+
+@media all and (max-width: 360px) {
+  body {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .artist-entry{
+    flex-direction: column;
+  }
+
+  .artist-entry-text{
+    width: 100%;
+  }
+
+  .dragndrop{
+    width: 100%;
+  }
+
+
+  .site-page-subtitle{
+    font-size: 24px;
+    padding-bottom: .2em;
+  }
+
+  .site-page-text{
+    font-size: 18px;
+  }
+
+  .site-page-text.shp-lp-album-text{
+    font-size: 16px;
+  }
+
+  .img-container.stokey-print-test{
+    width: 280px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+}
