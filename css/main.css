@@ -129,7 +129,6 @@ Catalogue page
  .buy-link{
    animation: rainbowtext 10s infinite ease-in-out;
    text-decoration: underline;
-   text-align: right;
    display: block;
  }
 
