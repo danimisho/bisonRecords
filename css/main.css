@@ -135,6 +135,11 @@ Catalogue page
   margin-right: .3em;
 }
 
+.catalogue-img-container{
+  width: 95%;
+}
+
+
  .catalogue-section{
    margin: auto;
    margin-bottom: 2em;
@@ -310,6 +315,11 @@ Artists page
    margin-top: -336px;
  }
 
+.humming-dogs-video{
+  width: 900px;
+  height:506px;
+}
+
  /* flip card */
 
  /* label {
@@ -459,6 +469,11 @@ About page
    flex-direction: column;
    flex-basis: 100%;
   }
+
+  .humming-dogs-video{
+    width: 700px;
+    height:394px;
+  }
 }
 
 
@@ -483,6 +498,10 @@ About page
 
   .site-page-text{
     font-size: 21px;
+  }
+  .humming-dogs-video{
+    width: 500px;
+    height:281px;
   }
 }
 
@@ -520,6 +539,10 @@ About page
     left: 50%;
     top: 50%;
   }
+  .humming-dogs-video{
+    width: 300px;
+    height:169px;
+  }
 }
 
 @media all and (max-width: 400px) {
@@ -536,18 +559,22 @@ About page
     width: 100%;
   }
 
+  .site-page-title{
+    font-size: 24px;
+  }
+
 
   .site-page-subtitle{
-    font-size: 24px;
+    font-size: 18px;
     padding-bottom: .2em;
   }
 
   .site-page-text{
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .img-container.stokey-print-test{
-    width: 320px;
+    width: 90%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -566,16 +593,6 @@ About page
 
   .dragndrop{
     width: 100%;
-  }
-
-
-  .site-page-subtitle{
-    font-size: 24px;
-    padding-bottom: .2em;
-  }
-
-  .site-page-text{
-    font-size: 18px;
   }
 
   .img-container.stokey-print-test{
